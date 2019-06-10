@@ -40,13 +40,14 @@ function getDogImage(){
                 img.setAttribute("class", "normImg")
                 img.setAttribute("width", "150")
                 img.setAttribute("height", "150")
-                console.log(img)
                 append(document.getElementById("images"), div);
                 append(div, img);
-            
+
+
+                if(dogPictures === "Breed not found"){alert("Please enter a valid breed")} 
         
     })
-    .catch(error => alert(dogPictures)
+    .catch(error => alert("Please enter a valid breed")
     )
     
 }
